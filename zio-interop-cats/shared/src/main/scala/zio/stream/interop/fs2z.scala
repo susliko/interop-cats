@@ -31,6 +31,5 @@ trait FS2IONetworkInstances extends CatsEffectInstances {
 trait FS2IOUnixSocketsInstances extends CatsEffectInstances {
 
   implicit final def unixSocketsInstance[R]: UnixSockets[RIO[R, _]] =
-    UnixSockets.forAsync(asyncInstance[R])
-
+    ???
 }
